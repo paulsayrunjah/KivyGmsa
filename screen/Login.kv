@@ -1,0 +1,89 @@
+#:import utils kivy.utils
+
+<Login>
+    orientation: "vertical"
+    AnchorLayout:
+        canvas:
+            Color:
+                rgba: 72, 188, 255, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        BoxLayout:
+            canvas:
+                Color:
+                    rgba: utils.get_color_from_hex('#6194C1')
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            orientation: "vertical"
+            size: 400,300
+            size_hint: None, None
+            Label:
+                text: "welcome"
+                font_size: 20
+                color: 1,1,1,1
+                size_hint_y: 0.2
+                
+            BoxLayout:
+                orientation: "vertical"
+                size_hint_y: 0.7
+                padding: [ 10, 5, 10, 20 ]
+                canvas:
+                    Color:
+                        rgba: utils.get_color_from_hex('#cccccc')
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size     
+                BoxLayout:
+                    size_hint_y: "40dp"                               
+                    Label:
+                        text: "username: "
+                        font_size: 15
+                        size_hint_x: 0.4
+                        color: utils.get_color_from_hex('#FF1F00')
+                    Widget:    
+                TextInput:
+                    size_hint_y: "30dp"
+                BoxLayout:
+                    size_hint_y: "40dp"                               
+                    Label:
+                        text: "password: "
+                        font_size: 15
+                        size_hint_x: 0.4
+                        color: utils.get_color_from_hex('#FF1F00')
+                    Widget:
+                TextInput:
+                    size_hint_y: "30dp"
+                BoxLayout:
+                    size_hint_y: "40dp"
+                    padding: [ 0, 10, 0, 0 ]
+                    Widget:
+                        size_hint_x: .25    
+                    Button:
+                        size_hint_x: .5        
+                        text: "Login"
+                        on_press: app.root.onLogin()
+                    Widget:
+                        size_hint_x: .25    
+            BoxLayout:
+                size_hint_y: 0.1
+                padding: 10
+                canvas:
+                    Color:
+                        rgba: utils.get_color_from_hex('#cccccc')
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                Label:
+                    font_size: 18
+                    text: "Powered by Sayrunjah "
+                    color: utils.get_color_from_hex('#00000')              
+
+
+                    
+
+                        
+        
+                       
+       

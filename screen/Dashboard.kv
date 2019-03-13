@@ -1,0 +1,64 @@
+#:import utils kivy.utils
+<DashboardActionButton@ActionButton>
+    font_size: 18
+    color:  utils.get_color_from_hex('#ffffff')
+
+<MenuButton@Button>
+    size_hint_y: None
+    height: "40dp"
+
+
+<Dashboard>
+    dashboard_container: dashboard_container 
+    BoxLayout:
+        orientation: "vertical"
+        ActionBar:
+            canvas:
+                Color:
+                    rgba: utils.get_color_from_hex('#4980B5')
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            pos_hint: {'top':1}
+            ActionView:
+                use_separator: True
+                ActionPrevious:
+                    title: root.username
+                    with_previous: False
+                ActionOverflow:
+                DashboardActionButton:
+                    text: 'Settings'
+                DashboardActionButton:
+                    text: 'Reports'
+                DashboardActionButton:
+                    text: 'Logout'
+                    on_press: app.root.onLogout()
+                
+                        
+        BoxLayout:
+            orientation: "horizontal"
+            BoxLayout:
+                orientation: "vertical"
+                size_hint_x: 0.2 
+                MenuButton:
+                    text: "Home"
+                MenuButton:
+                    text: "Customers"
+                    on_press: root.gotoCustomerView()
+                MenuButton:
+                    text: "Vehicles"
+                MenuButton:
+                    text: "Job Orders"
+                MenuButton:
+                    text: "Invoices"
+                    
+                Widget:        
+            BoxLayout:
+                id: dashboard_container
+                size_hint_x: 0.8
+                canvas:
+                    Color:
+                        rgba: 1, 1, 1, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size         
