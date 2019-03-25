@@ -1,0 +1,45 @@
+<CustomerSave>
+    canvas:
+        Color:
+            rgba: utils.get_color_from_hex('#4980B5')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    padding: 20
+    spacing: 20
+    orientation: "vertical"
+    Label:
+        size_hint_y: None
+        font_size: 20
+        height: "30dp"
+        text: "Add Customer"
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        Label:
+            size_hint_x: .2
+            text: "Name :"
+        TextInput:        
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        Label:
+            size_hint_x: .2
+            text: "Contact :"
+        TextInput:        
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        orientation: "horizontal"
+        Widget:
+            size_hint_x: .4
+            size_hint_x: .4
+        Button:
+            text: "Cancel"
+        Button:
+            text: "Ok"         
+    Widget:    
+                                
+                
+                 
+        

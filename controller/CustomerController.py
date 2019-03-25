@@ -1,6 +1,8 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.properties import ObjectProperty
 from kivy.uix.button import Button
+from kivy.uix.label import Label
+from kivy.uix.modalview import ModalView
 from kivy.properties import BooleanProperty, ListProperty, StringProperty, ObjectProperty
 from kivy.uix.recycleview.views import RecycleDataViewBehavior
 from kivy.uix.recyclegridlayout import RecycleGridLayout
@@ -45,8 +47,10 @@ class SelectableButton(RecycleDataViewBehavior, Button):
             # print(self.selected_row_data)
             data = CustomerTable().my_data[rv_get_selected_row(4, self.index)]
             print(data)
+            
 
     def on_press(self):
+        
         pass
 
 
@@ -67,19 +71,181 @@ class CustomerTable(BoxLayout):
             {"name": "pauuz", "age": "25",
                 "team": "Manchester united", "id": 3, "un": "wed"},
             {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
+                "team": "Manchester united", "id": 3, "un": "wed"},
+            {"name": "pauuz", "age": "25",
                 "team": "Manchester united", "id": 4, "un": "thur"}
         ]
-        prefred_order = ["id", "name", "age", "team"]
+        prefred_order = ["id","name", "age", "team"]
+        # create data_items
         for row in self.my_data:
             for x in prefred_order:
                 self.data_items.append(row[x])
-        # create data_items
-        # for i in range(100):
-        #     index = i + 1
-        #     self.data_items.append(index)
-        #     for row in my_data:
-        #         for x in prefred_order:
-        #             self.data_items.append(row[x]+"-"+str(index))
 
         return self.data_items
 
@@ -88,5 +254,12 @@ class CustomerTable(BoxLayout):
         pass
 
 
+class CustomerSave(BoxLayout):
+    pass
+
 class Customer(BoxLayout):
+    def show_add_customer(self):
+        view = ModalView(size_hint=(None, None), size=(400,250), auto_dismiss =True)
+        view.add_widget(CustomerSave())
+        view.open()
     pass
